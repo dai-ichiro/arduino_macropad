@@ -11,7 +11,8 @@ buttons = [
     { 'text': '<a href = ""></a>', 'serialNum': 45},
     { 'text': 'python -m pip install --upgrade pip', 'serialNum': 46},
     { 'text': '--cache-dir python_cache', 'serialNum': 47},
-    { 'text': 'pip install torch torchvision', 'serialNum': 48}
+    { 'text': 'pip install torch torchvision', 'serialNum': 48},
+    { 'text': 'GitHub token', 'serialNum': 49}
 ]
 
 class KeyboardWidge(QWidget):
@@ -24,7 +25,7 @@ class KeyboardWidge(QWidget):
         self.button_list = []
         for i in range(12):
             self.button_list.append(QPushButton())
-            self.button_list[-1].setStyleSheet('font: 20px; font-weight: bold; qproperty-iconSize: 32px;')
+            self.button_list[-1].setStyleSheet('font: 20px; font-weight: bold;')
             self.button_list[-1].setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Ignored)
             
         for i, each_button in enumerate(buttons):
