@@ -5,11 +5,13 @@ from PySide6.QtGui import QIcon
 
 from youtube import YoutubeWidge
 from powerpoint import PowerpointWidget
+from keyboard import KeyboardWidge
 
 toolbar_items = [
     { 'name': 'Menu', 'icon': './icon/menu.svg', 'widget': QWidget},
     { 'name': 'PowerPoint', 'icon': './icon/powerpoint.svg', 'widget': PowerpointWidget},
     { 'name': 'YouTube', 'icon': './icon/youtube.svg', 'widget': YoutubeWidge},
+    { 'name': 'Keyboard', 'icon': './icon/pen-tool.svg', 'widget': KeyboardWidge}
 ]
 
 class Window(QMainWindow):
